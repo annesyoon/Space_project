@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Aspace";
+  src: url("../fonts/aspace_demo.otf");
+}
+@font-face {
+  font-family: "Space explorer";
+  src: url("../fonts/SPACE EXPLORER.otf");
+}
+@font-face {
+  font-family: "Spaced";
+  src: url("../fonts/Spaced.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg1.jpg);
+  background-attachment: fixed;
+  color: white;
+  background-size: contain;
+  text-align: center;
+}
+
+p {
+  font-family: "spaced", sans-serif;
+}
+
+a {
+  font-family: "Spaced", sans-serif;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+header h1 {
+  font-family: "spaced", sans-serif;
+  font-size: xx-large;
+  float: left;
+}
+header .link {
+  word-spacing: 50px;
+  text-align: center;
+  padding: 10px 15px;
+  margin-top: 20px;
+  word-spacing: 100px;
+}
+
+h1 {
+  font-family: "space explorer", sans-serif;
+  font-size: 100px;
+}
+
+.first {
+  display: inline-block;
+  padding: 30px;
+  align-items: baseline;
+}
+.first article {
+  background-color: rgba(0, 0, 0, 0.638);
+  padding: 40px;
+  max-width: 500px;
+  text-align: left;
+  font-size: large;
+  float: left;
+}
+.first img {
+  height: 600px;
+  float: right;
+  z-index: -1;
+}
+.first model-viewer {
+  float: right;
+  height: 600px;
+  width: 700px;
+}
+
+.second {
+  background-color: black;
+  padding: 50px;
+}
+.second iframe {
+  width: 650px;
+  height: 500px;
+}
+
+.third img {
+  height: 500px;
+  float: left;
+  text-align: left;
+}
+.third article {
+  float: right;
+  text-align: right;
+  word-wrap: break-word;
+  max-width: 500px;
+}
+.third .result {
+  margin: 100px;
+  padding: 30px;
+}
+
+fieldset {
+  background-color: black;
+}
+
+input, option, select {
+  font-family: "spaced", sans-serif;
+  font-size: large;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+option {
+  height: 100px;
+  border-radius: 30px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  display: inline-block;
+  padding: 50px;
+  bottom: 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
