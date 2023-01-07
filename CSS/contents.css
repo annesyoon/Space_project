@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "a•space";
+  src: url("fonts/aspace_demo.otf");
+}
+@font-face {
+  font-family: "Voyager";
+  src: url("fonts/VOYAGER.otf");
+}
+@font-face {
+  font-family: "Space explorer";
+  src: url("fonts/SPACE EXPLORER.otf");
+}
+@font-face {
+  font-family: "Spaced";
+  src: url("fonts/Spaced.otf");
+}
+html body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+ul li {
+  list-style: none;
+  font-size: 25px;
+  text-align: left;
+}
+
+.sidebar {
+  padding: 50px;
+}
+.sidebar h1 {
+  font-size: medium;
+}
+.sidebar:hover {
+  cursor: pointer;
+}
+
+.return {
+  bottom: 0;
+  position: absolute;
+}
+
+.menu {
+  display: inline-block;
+  max-width: 220px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.271);
+  border-right: #ffffff solid 1px;
+}
+.menu h2, .menu p {
+  margin-top: 10%;
+  font-family: "Spaced", sans-serif;
+}
+.menu h2 {
+  font-size: 40px;
+  text-align: left;
+}
+.menu i {
+  font-size: 25px;
+}
+.menu i:hover {
+  font-size: 30px;
+}
+
+a {
+  font-family: "a•space", sans-serif;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+}
+
+.planet {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 900vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: url("../images/background.jpg");
+}
+
+.outer_wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+h1 {
+  font-family: "Space explorer", serif;
+}
+
+.intro {
+  padding: 100px;
+}
+.intro h1 {
+  position: relative;
+  font-size: x-large;
+  color: white;
+  padding: 0;
+  font-size: 50px;
+  width: 600px;
+  margin: 0;
+}
+.intro p {
+  font-size: 24px;
+}
+.intro article {
+  background-color: rgba(35, 33, 33, 0.75);
+  padding: 20px;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.one h1, .seven h1, .six h1, .five h1, .three h1, .two h1, .eight h1, .four h1 {
+  position: relative;
+  font-size: 100px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.one p, .seven p, .six p, .five p, .three p, .two p, .eight p, .four p {
+  font-size: 24px;
+}
+.one img, .seven img, .six img, .five img, .three img, .two img, .eight img, .four img {
+  height: 100vh;
+  transform: translate(0, -20%);
+}
+.one article, .seven article, .six article, .five article, .three article, .two article, .eight article, .four article {
+  background-color: rgba(35, 33, 33, 0.75);
+  padding: 20px;
+  max-height: 300px;
+  max-width: 350px;
+  margin-top: 20px;
+}
+.one .desc, .seven .desc, .six .desc, .five .desc, .three .desc, .two .desc, .eight .desc, .four .desc {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.two img, .eight img, .four img {
+  transform: translate(0, 40%);
+}
+.two h1 article, .eight h1 article, .four h1 article {
+  position: relative;
+  margin: 0;
+}
+
+.six img {
+  transform: translate(0, 10%);
+}/*# sourceMappingURL=contents.css.map */

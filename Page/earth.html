@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/earth.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../Javascript/1.js"></script>
+    <title>About | Earth</title>
+</head>
+<body>
+    <header>
+        <h1>SPACE PROJECT</h1>
+        <div class="link">
+            <a href="../index.html">HOME</a>
+            <a href="mars.html">EXPLORE:MARS</a>
+            <a href="earth.html">EARTH</a>
+        </div>
+    </header>
+
+    <div class="first">
+        <h1>OUR HOME: THE PLANET Earth</h1>
+            <model-viewer src="https://cdn.glitch.global/68e43780-ea70-4ce3-ba4f-11022e23ea37/Earth_1_12756.glb?v=1672415118023"
+            ios-src="https://cdn.glitch.global/68e43780-ea70-4ce3-ba4f-11022e23ea37/Earth_1_12756.usdz?v=1672415119681"
+            poster="../images/earth.png"
+            alt="A 3D model of an astronaut"
+            shadow-intensity="1"
+            camera-controls touch-action="pan-y"
+            auto-rotate ar></model-viewer>
+        <article>
+            <p>Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.
+
+                The Latest
+                 Ocean Worlds Resources
+                 NASA Telescope Takes 12-Year Time-Lapse Movie of Entire Sky
+                While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.
+                
+                The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.”</p>
+        </article>
+    </div>
+
+
+    <div class="third">
+        <h1>EPIC: Earth Polychromatic Imaging Camera </h1>
+        <fieldset>
+            <p>The EPIC API provides information on the daily imagery collected by DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument. Uniquely positioned at the Earth-Sun Lagrange point, EPIC provides full disc imagery of the Earth and captures unique perspectives of certain astronomical events such as lunar transits using a 2048x2048 pixel CCD (Charge Coupled Device) detector coupled to a 30-cm aperture Cassegrain telescope.</p>
+            <p>To get started pick a date and select the color type</p>
+            <input type="date" type="text" min="2015-09-01" name="dateVal" class="epicimg" id="dateVal">
+            <select name="color" class="epicimg" id="color">
+                <option value="natural">Natural</option>
+                <option value="enhanced">Enhanced</option>
+            </select>
+        </fieldset>
+        <div class="result">
+            <article>
+                <p>Image retrieval status</p><p class="resp" id="imageStatus"></p>
+                <p>Image</p><p class="resp" id="imageName"></p>
+                <p>Caption</p><p class="resp" id="imageCaption"></p>
+                <p>Image Date</p><p class="resp" id="imageDate"></p>
+            </article>
+            <img id="imageID" src=""/>
+        </div>
+    </div>
+
+    <footer>
+        <p>ALL RIGHTS RESERVED TO NASA. IMAGES ARE SUBJECTED TO NASA COPYRIGHT RULES</p>
+    </footer>
+          <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+      </script>
+</body>
+</html>

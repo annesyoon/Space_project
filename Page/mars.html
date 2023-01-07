@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>SPACE PROJECT | XPLORE</title>
+    <link rel="icon" href="..//images/mars.png">
+    <script src="../Javascript/1.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SPACE PROJECT</h1>
+        <div class="link">
+            <a href="../index.html">HOME</a>
+            <a href="mars.html">EXPLORE:MARS</a>
+            <a href="earth.html">EARTH</a>
+        </div>
+    </header>
+    
+    <div class="first">
+        <h1>MARS: A JOURNEY</h1>
+            <model-viewer src="https://cdn.glitch.global/68e43780-ea70-4ce3-ba4f-11022e23ea37/Mars_1_6792.glb?v=1672413617886"
+            ios-src="https://cdn.glitch.global/68e43780-ea70-4ce3-ba4f-11022e23ea37/Mars_1_6792.usdz?v=1672413618520"
+            poster="../images/mars.png"
+            alt="Mars 3D model"
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate ar>
+        <p>Interact with the model by click and rotating</p>
+        </model-viewer>
+        <article>
+           <p>Mars is no place for the faint-hearted. It’s dry, rocky, and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest planetary neighbours (Venus is the other). Mars is one of the easiest planets to spot in the night sky – it looks like a bright red point of light. Despite being inhospitable to humans, robotic explorers – like NASA's new Perseverance rover – are serving as pathfinders to eventually get humans to the surface of the Red Planet.</p>
+        </article>
+    </div>
+
+    <div class="second">
+        <h1>What's on mars?</h1>
+        <article>
+            <h2>Mars curiosity rover</h2>
+            <p>Part of NASA's Mars Science Laboratory mission, Curiosity is the largest and most capable rover ever sent to Mars. It launched Nov. 26, 2011 and landed on Mars at 10:32 p.m. PDT on Aug. 5, 2012 (1:32 a.m. EDT on Aug. 6, 2012).
+
+                Curiosity set out to answer the question: Did Mars ever have the right environmental conditions to support small life forms called microbes? Early in its mission, Curiosity's scientific tools found chemical and mineral evidence of past habitable environments on Mars. It continues to explore the rock record from a time when Mars could have been home to microbial life.</p>
+        </article>
+        <model-viewer src="https://cdn.glitch.global/68e43780-ea70-4ce3-ba4f-11022e23ea37/Curiosity_static.glb?v=1672606911527"
+                  ios-src="https://cdn.glitch.global/68e43780-ea70-4ce3-ba4f-11022e23ea37/Curiosity_static.usdz?v=1672606909002"
+                  poster="../images/curiosity.png"
+                  alt="Mars"
+                  shadow-intensity="1"
+                  camera-controls
+                  auto-rotate ar>
+                  <p>Interact with the model by click and rotating</p>
+    </model-viewer>
+
+    <h2>Mars weather</h2>
+        <iframe src='https://mars.nasa.gov/layout/embed/image/mslweather/' scrolling='no' frameborder='0'></iframe>
+    </div>
+        
+        
+        <div class="third">
+            <h1>MARS ROVER PHOTOS</h1>  
+        <fieldset>
+          <p>Wanna see what's on mars? lookup photos taken by the curiosity rover below.</p>
+          <p>make queries by selecting a date and camera type</p>
+          <input type="date" type="text" name="datez" id="datez" class="input" min="2012-08-06" required>
+           <select name="camera" id="camera" class="input">
+            <option value="fhaz">Front Hazard Avoidance Camera</option>
+            <option value="rhaz">Rear Hazard Avoidance Camera</option>
+            <option value="mast">Mast Camera</option>
+            <option value="chemcam">Chemistry and Camera Complex</option>
+            <option value="mahli">Mars Hand Lens Imager</option>
+            <option value="mardi">Mars Descent Imager</option>
+            <option value="navcam">Navigation Camera</option>
+            <option value="pancam">Panoramic Camera</option>
+            <option value="minites">Miniature Thermal Emission Spectrometer (Mini-TES)</option>
+           </select>
+        </fieldset>
+
+        <div class="result">
+            <article>
+                <p>Image retrieval status:</p><p class="resp" id="imageStatus"></p>
+                <br>
+                <p>Landing Date: </p><p class="resp" id="landingDate"></p>
+                <br>
+                <p>Camera Name</p><p class="resp" id="camName"></p>
+                <br>
+                <p>Martian Sol</p><p class="resp" id="solNum"></p>
+            </article>
+            <img id="imageID" src=""/>
+        </div>
+      </div>
+
+    <footer>
+        <p>ALL RIGHTS RESERVED TO NASA. IMAGES ARE SUBJECTED TO NASA COPYRIGHT RULES</p>
+    </footer>
+
+      <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script> 
+</body>
+</html>
